@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import OrientationSurvey from './pages/OrientationSurvey';
+import { SurveyProvider } from './pages/context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <SurveyProvider>
+      <App />
+      
+    </SurveyProvider>
   </React.StrictMode>
 );
 
